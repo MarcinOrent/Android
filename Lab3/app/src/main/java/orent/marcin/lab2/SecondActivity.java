@@ -1,11 +1,13 @@
 package orent.marcin.lab2;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -34,49 +36,28 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("name", name);
         intent.putExtra("level", level);
         intent.putExtra("champ", champ);
-        startActivity(intent);
+        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox2);
+        if (checkBox.isChecked()) {
+            checkBox.setChecked(true);
+            checkBox.setTextColor(Color.BLACK);
+            startActivity(intent);
+
+        } else {
+            checkBox.setTextColor(Color.RED);
+            Toast.makeText(SecondActivity.this,
+                    "Musisz zaakceptować regulamin", Toast.LENGTH_SHORT).show();
+        }
 
 
-
-       /*  Switch switch2 = (Switch) findViewById(R.id.switch2);
-        switch2.setTextOn("On");
-        switch2.setTextOff("Off");
-
-
-       boolean checked = ((CheckBox) view).isChecked();
-
-        switch (view.getId()) {
-            case R.id.checkBox2:
-                if (checked)
-                    Toast.makeText(SecondActivity.this,
-                            "Czy to dziala?", Toast.LENGTH_LONG).show();
-
-
-        } */
 
 
     }
+
+
 }
-/*   final CheckB
-            });ox checkbox = (CheckBox) findViewById(R.id.box);
-            checkbox.setOnClickListener(new OnClickListener() {
-                public void onClick(View v) {
-                    // Perform action on clicks, depending on whether it's now checked
-                    if (((CheckBox) v).isChecked()) {
-                       ?????????????
-                    } else {
-                       ???????????
-                    }
-                }
 
 
-In your layout xml file add
 
-android:visibility="gone"
-to the View that have to be hidden at startup.
 
-Then in your code:
 
-myHiddenView.setVisibility(View.VISIBLE);
-to make it visible.*/
 
