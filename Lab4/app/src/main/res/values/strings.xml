@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string-array name="Postacie">
+        <item>Thor</item>
+        <item>Hulk</item>
+        <item>IronMan</item>
+        <item>MrFantastic</item>
+        <item>Thing</item>
+        <item>HawkEye</item>
+        <item>Thanos</item>
+        <item>RedHulk</item>
+        <item>BlackCat</item>
+        <item>Shuri</item>
+    </string-array>
+</resources>
