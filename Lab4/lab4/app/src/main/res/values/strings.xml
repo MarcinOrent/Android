@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App2</string>
+    <string-array name="opcje">
+        <item>Villains</item>
+        <item>Hero</item>
+    </string-array>
+</resources>
